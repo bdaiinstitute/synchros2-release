@@ -1,22 +1,9 @@
 # `synchros2`
 
-![Python Support](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)
-![ROS Support](https://img.shields.io/badge/ROS-humble%20%7C%20jazzy-blue)
+`synchros2` is a collection of utilities and wrappers built on top of [`rclpy`](https://github.com/ros2/rclpy). These utilities simplify ROS 2 usage by enabling standard, idiomatic, synchronous Python programming. To that end, `synchros2` relies on heavy yet implicit concurrency and thus there is overhead in its simplicity.relying on implicit concurrency for simplicity.
 
-## Overview
+## Features
 
-`synchros2` enables a different, at times simpler approach to ROS 2 programming, particularly for those that come with a ROS 1 background.  See the [`synchros2` README](synchros2/README.md) for more information.
-
-## Packages
-
-This repository contains the following packages:
-
-| Package                                                                             | Description                                                                   |
-|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [`synchros2`](synchros2)                                                            | `rclpy` wrappers to ease idiomatic, synchronous ROS 2 programming in Python.  |
-| [`synchros2_tutorials_example`](synchros2_tutorials_example)                        | Support code for `synchros2` tutorials.                                       |
-| [`synchros2_tutorials_interfaces_example`](synchros2_tutorials_interfaces_example)  | Support interfaces for `synchros2` tutorials.                                 |
-
-## Next steps
-
-See [contribution guidelines](CONTRIBUTING.md)!
+- Process-wide ROS 2 nodes
+- RPC-like action and service clients
+- Stateful stream-like topic subscriptions
