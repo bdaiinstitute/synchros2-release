@@ -1,0 +1,12 @@
+Source: ros-jazzy-synchros2
+Section: misc
+Priority: optional
+Maintainer: RAI Institute <opensource@rai-inst.com>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, python3-typing-extensions <!nocheck>, ros-jazzy-example-interfaces <!nocheck>, ros-jazzy-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-synchros2
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, ros-jazzy-action-msgs, ros-jazzy-geometry-msgs, ros-jazzy-launch, ros-jazzy-message-filters, ros-jazzy-rclpy, ros-jazzy-tf2-msgs, ros-jazzy-tf2-ros, ros-jazzy-ros-workspace
+Description: RAI Institute wrappers for ROS2
